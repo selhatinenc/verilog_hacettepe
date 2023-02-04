@@ -1,0 +1,459 @@
+$date
+	Sat Dec 10 19:43:32 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module four_bit_2x1_mux_tb $end
+$var wire 4 ! Out [3:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$var reg 1 $ Select $end
+$scope module uut $end
+$var wire 4 % In_0 [3:0] $end
+$var wire 4 & In_1 [3:0] $end
+$var wire 1 $ Select $end
+$var wire 4 ' Out [3:0] $end
+$upscope $end
+$upscope $end
+$scope module four_bit_adder_subtractor_tb $end
+$var wire 4 ( Result [3:0] $end
+$var wire 1 ) Cout $end
+$var reg 4 * A [3:0] $end
+$var reg 4 + B [3:0] $end
+$var reg 1 , subtract $end
+$var integer 32 - i [31:0] $end
+$var integer 32 . j [31:0] $end
+$var integer 32 / k [31:0] $end
+$scope module uut $end
+$var wire 4 0 A [3:0] $end
+$var wire 4 1 B [3:0] $end
+$var wire 1 , subtract $end
+$var wire 4 2 outofmux [3:0] $end
+$var wire 4 3 comp_of_b [3:0] $end
+$var wire 4 4 Result [3:0] $end
+$var wire 1 ) Cout $end
+$scope module F_bit_rca $end
+$var wire 4 5 A [3:0] $end
+$var wire 1 6 Cin $end
+$var wire 4 7 S [3:0] $end
+$var wire 1 ) Cout $end
+$var wire 3 8 Carries [2:0] $end
+$var wire 4 9 B [3:0] $end
+$scope module F1 $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 6 Cin $end
+$var wire 1 < Cout $end
+$var wire 1 = S $end
+$upscope $end
+$scope module F2 $end
+$var wire 1 > A $end
+$var wire 1 ? B $end
+$var wire 1 @ Cin $end
+$var wire 1 A Cout $end
+$var wire 1 B S $end
+$upscope $end
+$scope module F3 $end
+$var wire 1 C A $end
+$var wire 1 D B $end
+$var wire 1 E Cin $end
+$var wire 1 F Cout $end
+$var wire 1 G S $end
+$upscope $end
+$scope module F4 $end
+$var wire 1 H A $end
+$var wire 1 I B $end
+$var wire 1 J Cin $end
+$var wire 1 ) Cout $end
+$var wire 1 K S $end
+$upscope $end
+$upscope $end
+$scope module Four_Bit_Mux $end
+$var wire 4 L In_0 [3:0] $end
+$var wire 1 , Select $end
+$var wire 4 M Out [3:0] $end
+$var wire 4 N In_1 [3:0] $end
+$upscope $end
+$scope module Two_s_compl_of_B $end
+$var wire 4 O In [3:0] $end
+$var wire 4 P Out [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module four_bit_rca_tb $end
+$var wire 4 Q S [3:0] $end
+$var wire 1 R Cout $end
+$var reg 4 S A [3:0] $end
+$var reg 4 T B [3:0] $end
+$var reg 1 U Cin $end
+$var integer 32 V i [31:0] $end
+$var integer 32 W j [31:0] $end
+$var integer 32 X k [31:0] $end
+$scope module uut $end
+$var wire 4 Y A [3:0] $end
+$var wire 4 Z B [3:0] $end
+$var wire 1 U Cin $end
+$var wire 4 [ S [3:0] $end
+$var wire 1 R Cout $end
+$var wire 3 \ Carries [2:0] $end
+$scope module F1 $end
+$var wire 1 ] A $end
+$var wire 1 ^ B $end
+$var wire 1 U Cin $end
+$var wire 1 _ Cout $end
+$var wire 1 ` S $end
+$upscope $end
+$scope module F2 $end
+$var wire 1 a A $end
+$var wire 1 b B $end
+$var wire 1 c Cin $end
+$var wire 1 d Cout $end
+$var wire 1 e S $end
+$upscope $end
+$scope module F3 $end
+$var wire 1 f A $end
+$var wire 1 g B $end
+$var wire 1 h Cin $end
+$var wire 1 i Cout $end
+$var wire 1 j S $end
+$upscope $end
+$scope module F4 $end
+$var wire 1 k A $end
+$var wire 1 l B $end
+$var wire 1 m Cin $end
+$var wire 1 R Cout $end
+$var wire 1 n S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adder_tb $end
+$var wire 1 o S $end
+$var wire 1 p Cout $end
+$var reg 1 q A $end
+$var reg 1 r B $end
+$var reg 1 s Cin $end
+$var integer 32 t i [31:0] $end
+$var integer 32 u j [31:0] $end
+$scope module uut $end
+$var wire 1 q A $end
+$var wire 1 r B $end
+$var wire 1 s Cin $end
+$var wire 1 p Cout $end
+$var wire 1 o S $end
+$upscope $end
+$upscope $end
+$scope module two_s_complement_tb $end
+$var wire 4 v outputtest [3:0] $end
+$var reg 4 w In_test [3:0] $end
+$var integer 32 x i [31:0] $end
+$scope module uut $end
+$var wire 4 y In [3:0] $end
+$var wire 4 z Out [3:0] $end
+$upscope $end
+$upscope $end
+$scope module four_bit_2x1_mux_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_adder_subtractor_tb $end
+$scope module uut $end
+$scope module F_bit_rca $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$scope module Four_Bit_Mux $end
+$upscope $end
+$scope module Two_s_compl_of_B $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module four_bit_rca_tb $end
+$scope module uut $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adder_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module two_s_complement_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_2x1_mux_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_adder_subtractor_tb $end
+$scope module uut $end
+$scope module F_bit_rca $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$scope module Four_Bit_Mux $end
+$upscope $end
+$scope module Two_s_compl_of_B $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module four_bit_rca_tb $end
+$scope module uut $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adder_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module two_s_complement_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_2x1_mux_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_adder_subtractor_tb $end
+$scope module uut $end
+$scope module F_bit_rca $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$scope module Four_Bit_Mux $end
+$upscope $end
+$scope module Two_s_compl_of_B $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module four_bit_rca_tb $end
+$scope module uut $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adder_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module two_s_complement_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_2x1_mux_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module four_bit_adder_subtractor_tb $end
+$scope module uut $end
+$scope module F_bit_rca $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$scope module Four_Bit_Mux $end
+$upscope $end
+$scope module Two_s_compl_of_B $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module four_bit_rca_tb $end
+$scope module uut $end
+$scope module F1 $end
+$upscope $end
+$scope module F2 $end
+$upscope $end
+$scope module F3 $end
+$upscope $end
+$scope module F4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module full_adder_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$scope module two_s_complement_tb $end
+$scope module uut $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 z
+b0 y
+b0 x
+b0 w
+b0 v
+b0 u
+b0 t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+b0 \
+b0 [
+b0 Z
+b0 Y
+b0 X
+b0 W
+b0 V
+0U
+b0 T
+b0 S
+0R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+b0 9
+b0 8
+b0 7
+06
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+bx /
+bx .
+bx -
+0,
+b0 +
+b0 *
+0)
+b0 (
+b1111 '
+b0 &
+b1111 %
+0$
+b1111 #
+b0 "
+b1111 !
+$end
+#10000
+1p
+b1111 v
+b1111 z
+b1 Q
+b1 [
+1`
+b0 !
+b0 '
+b1 w
+b1 y
+b1 x
+1r
+1q
+1U
+1,
+b0 /
+b0 .
+b0 -
+1$
+#20000
+0p
+1o
+b1110 v
+b1110 z
+b0 Q
+b0 [
+0`
+b10 w
+b10 y
+b10 x
+0r
+b1 u
+0U
+b1 X
+0,
+b1 /

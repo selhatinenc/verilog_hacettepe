@@ -1,0 +1,215 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000000649063a470 .scope module, "counter_tb" "counter_tb" 2 1;
+ .timescale 0 0;
+v0000006490697070_0 .var "clk", 0 0;
+v0000006490697250_0 .net "count", 2 0, L_0000006490699a20;  1 drivers
+v0000006490697a70_0 .var "mode", 0 0;
+v0000006490698a80_0 .var "reset", 0 0;
+S_00000064904bc3b0 .scope begin, "$ivl_for_loop0" "$ivl_for_loop0" 2 24, 2 24 0, S_000000649063a470;
+ .timescale 0 0;
+v000000649063a330_0 .var/i "i", 31 0;
+S_00000064904bc540 .scope begin, "$ivl_for_loop1" "$ivl_for_loop1" 2 35, 2 35 0, S_000000649063a470;
+ .timescale 0 0;
+v0000006490613230_0 .var/i "i", 31 0;
+S_00000064904bc6d0 .scope module, "uut" "counter" 2 10, 3 1 0, S_000000649063a470;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "mode";
+    .port_info 3 /OUTPUT 3 "count";
+L_0000006490639c50 .functor NOT 3, L_0000006490699a20, C4<000>, C4<000>, C4<000>;
+v00000064906972f0_0 .net *"_ivl_11", 2 0, L_0000006490639c50;  1 drivers
+v00000064906979d0_0 .net "carry_out", 0 0, L_0000006490698ee0;  1 drivers
+v0000006490697e30_0 .net "clk", 0 0, v0000006490697070_0;  1 drivers
+v0000006490697c50_0 .net "count", 2 0, L_0000006490699a20;  alias, 1 drivers
+v0000006490697d90_0 .net "mode", 0 0, v0000006490697a70_0;  1 drivers
+v0000006490697570_0 .net "not_q1", 0 0, L_000000649063a200;  1 drivers
+v0000006490697750_0 .net "not_q2", 0 0, L_0000006490639e10;  1 drivers
+v0000006490697890_0 .net "not_q3", 0 0, L_0000006490639fd0;  1 drivers
+v0000006490697ed0_0 .net "reset", 0 0, v0000006490698a80_0;  1 drivers
+L_0000006490698580 .functor MUXZ 1, L_0000006490698ee0, L_000000649063a200, v0000006490697a70_0, C4<>;
+L_0000006490698d00 .functor MUXZ 1, L_0000006490698ee0, L_0000006490639e10, v0000006490697a70_0, C4<>;
+o000000649064e088 .functor BUFZ 1, C4<z>; HiZ drive
+o000000649064e268 .functor BUFZ 1, C4<z>; HiZ drive
+o000000649064e418 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000006490699a20 .concat8 [ 1 1 1 0], o000000649064e088, o000000649064e268, o000000649064e418;
+L_0000006490698ee0 .part L_0000006490639c50, 0, 1;
+S_0000006490612b80 .scope module, "dff1" "DFF_reset" 3 8, 4 1 0, S_00000064904bc6d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clk";
+    .port_info 2 /INPUT 1 "reset";
+    .port_info 3 /OUTPUT 1 "q";
+    .port_info 4 /OUTPUT 1 "not_q";
+L_000000649063a200 .functor NOT 1, v0000006490612e50_0, C4<0>, C4<0>, C4<0>;
+v000000649064b9f0_0 .net "clk", 0 0, v0000006490697070_0;  alias, 1 drivers
+v000000649063a600_0 .net "d", 0 0, L_0000006490698ee0;  alias, 1 drivers
+v0000006490612d10_0 .net "not_q", 0 0, L_000000649063a200;  alias, 1 drivers
+v0000006490612db0_0 .net "q", 0 0, o000000649064e088;  0 drivers
+v0000006490612e50_0 .var "q_reg", 0 0;
+v0000006490697390_0 .net "reset", 0 0, v0000006490698a80_0;  alias, 1 drivers
+E_0000006490635a40 .event posedge, v000000649064b9f0_0;
+S_0000006490644270 .scope module, "dff2" "DFF_reset" 3 15, 4 1 0, S_00000064904bc6d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clk";
+    .port_info 2 /INPUT 1 "reset";
+    .port_info 3 /OUTPUT 1 "q";
+    .port_info 4 /OUTPUT 1 "not_q";
+L_0000006490639e10 .functor NOT 1, v0000006490697930_0, C4<0>, C4<0>, C4<0>;
+v0000006490697610_0 .net "clk", 0 0, v0000006490697070_0;  alias, 1 drivers
+v0000006490697cf0_0 .net "d", 0 0, L_0000006490698580;  1 drivers
+v0000006490697b10_0 .net "not_q", 0 0, L_0000006490639e10;  alias, 1 drivers
+v0000006490697430_0 .net "q", 0 0, o000000649064e268;  0 drivers
+v0000006490697930_0 .var "q_reg", 0 0;
+v0000006490697bb0_0 .net "reset", 0 0, v0000006490698a80_0;  alias, 1 drivers
+S_0000006490644400 .scope module, "dff3" "DFF_reset" 3 22, 4 1 0, S_00000064904bc6d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clk";
+    .port_info 2 /INPUT 1 "reset";
+    .port_info 3 /OUTPUT 1 "q";
+    .port_info 4 /OUTPUT 1 "not_q";
+L_0000006490639fd0 .functor NOT 1, v0000006490697110_0, C4<0>, C4<0>, C4<0>;
+v00000064906971b0_0 .net "clk", 0 0, v0000006490697070_0;  alias, 1 drivers
+v00000064906976b0_0 .net "d", 0 0, L_0000006490698d00;  1 drivers
+v00000064906977f0_0 .net "not_q", 0 0, L_0000006490639fd0;  alias, 1 drivers
+v0000006490697f70_0 .net "q", 0 0, o000000649064e418;  0 drivers
+v0000006490697110_0 .var "q_reg", 0 0;
+v00000064906974d0_0 .net "reset", 0 0, v0000006490698a80_0;  alias, 1 drivers
+    .scope S_0000006490612b80;
+T_0 ;
+    %wait E_0000006490635a40;
+    %load/vec4 v0000006490697390_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000006490612e50_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v000000649063a600_0;
+    %assign/vec4 v0000006490612e50_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000006490644270;
+T_1 ;
+    %wait E_0000006490635a40;
+    %load/vec4 v0000006490697bb0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000006490697930_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0000006490697cf0_0;
+    %assign/vec4 v0000006490697930_0, 0;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000006490644400;
+T_2 ;
+    %wait E_0000006490635a40;
+    %load/vec4 v00000064906974d0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000006490697110_0, 0;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/vec4 v00000064906976b0_0;
+    %assign/vec4 v0000006490697110_0, 0;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_000000649063a470;
+T_3 ;
+    %vpi_call 2 19 "$dumpfile", "counter_tb_mode_2.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000006490698a80_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000006490698a80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000006490697a70_0, 0, 1;
+    %fork t_1, S_00000064904bc3b0;
+    %jmp t_0;
+    .scope S_00000064904bc3b0;
+t_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000000649063a330_0, 0, 32;
+T_3.0 ;
+    %load/vec4 v000000649063a330_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_3.1, 5;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000006490697070_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000006490697070_0, 0, 1;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v000000649063a330_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v000000649063a330_0, 0, 32;
+    %jmp T_3.0;
+T_3.1 ;
+    %end;
+    .scope S_000000649063a470;
+t_0 %join;
+    %end;
+    .thread T_3;
+    .scope S_000000649063a470;
+T_4 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000006490698a80_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000006490698a80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000006490697a70_0, 0, 1;
+    %fork t_3, S_00000064904bc540;
+    %jmp t_2;
+    .scope S_00000064904bc540;
+t_3 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000006490613230_0, 0, 32;
+T_4.0 ;
+    %load/vec4 v0000006490613230_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_4.1, 5;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000006490697070_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000006490697070_0, 0, 1;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0000006490613230_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0000006490613230_0, 0, 32;
+    %jmp T_4.0;
+T_4.1 ;
+    %end;
+    .scope S_000000649063a470;
+t_2 %join;
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "counter_tb.v";
+    "counter.v";
+    "DFF_reset.v";

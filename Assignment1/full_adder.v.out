@@ -1,0 +1,41 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000019cc4702510 .scope module, "full_adder" "full_adder" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "S";
+    .port_info 4 /OUTPUT 1 "Cout";
+o0000019cc4736fb8 .functor BUFZ 1, C4<z>; HiZ drive
+o0000019cc4736fe8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000019cc481a6c0 .functor XOR 1, o0000019cc4736fb8, o0000019cc4736fe8, C4<0>, C4<0>;
+o0000019cc4737018 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000019cc4702b90 .functor XOR 1, o0000019cc4737018, L_0000019cc481a6c0, C4<0>, C4<0>;
+L_0000019cc4702fd0 .functor AND 1, o0000019cc4736fb8, o0000019cc4736fe8, C4<1>, C4<1>;
+L_0000019cc481eb40 .functor AND 1, o0000019cc4737018, o0000019cc4736fb8, C4<1>, C4<1>;
+L_0000019cc481ebb0 .functor OR 1, L_0000019cc4702fd0, L_0000019cc481eb40, C4<0>, C4<0>;
+L_0000019cc481ec20 .functor AND 1, o0000019cc4736fe8, o0000019cc4737018, C4<1>, C4<1>;
+L_0000019cc481ec90 .functor OR 1, L_0000019cc481ebb0, L_0000019cc481ec20, C4<0>, C4<0>;
+v0000019cc4702db0_0 .net "A", 0 0, o0000019cc4736fb8;  0 drivers
+v0000019cc481a620_0 .net "B", 0 0, o0000019cc4736fe8;  0 drivers
+v0000019cc47026a0_0 .net "Cin", 0 0, o0000019cc4737018;  0 drivers
+v0000019cc4702740_0 .net "Cout", 0 0, L_0000019cc481ec90;  1 drivers
+v0000019cc47027e0_0 .net "S", 0 0, L_0000019cc4702b90;  1 drivers
+v0000019cc4702880_0 .net *"_ivl_0", 0 0, L_0000019cc481a6c0;  1 drivers
+v0000019cc4702920_0 .net *"_ivl_10", 0 0, L_0000019cc481ec20;  1 drivers
+v0000019cc481e8d0_0 .net *"_ivl_4", 0 0, L_0000019cc4702fd0;  1 drivers
+v0000019cc481e970_0 .net *"_ivl_6", 0 0, L_0000019cc481eb40;  1 drivers
+v0000019cc481eaa0_0 .net *"_ivl_8", 0 0, L_0000019cc481ebb0;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "full_adder.v";

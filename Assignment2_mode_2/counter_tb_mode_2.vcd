@@ -1,0 +1,132 @@
+$date
+	Tue Dec 27 20:14:21 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module counter_tb $end
+$var wire 3 ! count [2:0] $end
+$var reg 1 " clk $end
+$var reg 1 # mode $end
+$var reg 1 $ reset $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # mode $end
+$var wire 1 $ reset $end
+$var wire 1 % not_q3 $end
+$var wire 1 & not_q2 $end
+$var wire 1 ' not_q1 $end
+$var wire 3 ( count [2:0] $end
+$var wire 1 ) carry_out $end
+$scope module dff1 $end
+$var wire 1 " clk $end
+$var wire 1 ) d $end
+$var wire 1 ' not_q $end
+$var wire 1 * q $end
+$var wire 1 $ reset $end
+$var reg 1 + q_reg $end
+$upscope $end
+$scope module dff2 $end
+$var wire 1 " clk $end
+$var wire 1 , d $end
+$var wire 1 & not_q $end
+$var wire 1 - q $end
+$var wire 1 $ reset $end
+$var reg 1 . q_reg $end
+$upscope $end
+$scope module dff3 $end
+$var wire 1 " clk $end
+$var wire 1 / d $end
+$var wire 1 % not_q $end
+$var wire 1 0 q $end
+$var wire 1 $ reset $end
+$var reg 1 1 q_reg $end
+$upscope $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 2 i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 3 i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 3
+bx 2
+x1
+z0
+x/
+x.
+z-
+x,
+x+
+z*
+z)
+bz (
+x'
+x&
+x%
+1$
+x#
+x"
+bz !
+$end
+#1
+b0 3
+b0 2
+1#
+0$
+#2
+z+
+1"
+#3
+b1 3
+b1 2
+0"
+#4
+1"
+#5
+b10 3
+b10 2
+0"
+#6
+1"
+#7
+b11 3
+b11 2
+0"
+#8
+1"
+#9
+b100 3
+b100 2
+0"
+#10
+1"
+#11
+b101 3
+b101 2
+0"
+#12
+1"
+#13
+b110 3
+b110 2
+0"
+#14
+1"
+#15
+b111 3
+b111 2
+0"
+#16
+1"
+#17
+b1000 3
+b1000 2
+0"
